@@ -1,0 +1,18 @@
+class Result {
+  static int countNodes(LinkList head) {
+	
+    int c=0;
+   if(head!=null){
+     LinkList n = head.next;
+    while(n!=head)
+    {
+      n=n.next;
+      c++;
+    }
+   
+    return c+1;
+   }
+    else
+      return 0;
+  }
+}
